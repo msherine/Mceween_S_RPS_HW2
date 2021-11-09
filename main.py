@@ -1,23 +1,18 @@
 from random import randint
 
-# add player and computer lives
-
-playerLives = 5
-computerLives = 5
-
-# save the player as a varible called player
-# the value of the player will be one of three choices to type (input)
-player = input("Choose your weapon: rock, paper or scissors: ")
-
-print("player chose: " + player)
-
-# an array is just a container. It holds multiple values in a 0-based index
-# you can store anything in an array and retrive it later. Arrays have a square bracket notation
 choices = ["rock", "paper", "scissors"]
+
+# player will be the weapon and the player will choose via input
+player = input("Choose your weapon: rock, paper or scissors: ")
 
 computer = choices[randint(0,2)]
 
-print("computer chose: " + computer)
+# these lives need to decrement when a player chooses via input 
+playerLives = 5
+computerLives = 5
+
+print("player choose" = player)
+print("computer choose: " + computer)
 
 if (computer == player):
 	print("Tie! Try again.")
