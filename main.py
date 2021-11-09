@@ -9,6 +9,25 @@ player = False
 playerLives = 5
 computerLives = 5
 
+
+def winorlose(status):
+	print("You " + status + "! Would you like to play again?")
+	choice = input(" Y / N? ")
+
+	global playerLives
+	global computerLives
+	global player
+
+	if choice == "n":
+		print(" Better luck next time!")
+		exit()
+	# reset and restart
+	else:
+		playerLives = 5
+		computerLives = 5
+		player = False
+
+# create an infinite loop 
 while player is False:
 
 	player = input("Choose your weapon: rock, paper or scissors: ")
@@ -44,18 +63,13 @@ while player is False:
 			print("You win!")
 			computerLives = computerLives - 1
 
-	print("computer lives: " + str(computerLives))
-	print("player lives: " + str(playerLives))
+	print("player life count: " + str(playerLives))
+	print("computer life count: " + str(computerLives))
 
 	if playerLives == 0:
-		print("You lost! Would you like to play again?")
-		choice = input(" Y / N? ")
+		winorlose("lost")
 
-		if choice == "n":
-			print(" Better luck next time!")
-			exit()
-			
 	elif computerLives == 0:
-		print(" You win!!")
+		winorlose("won")
 
 	player = False
