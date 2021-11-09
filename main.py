@@ -1,4 +1,5 @@
 from random import randint
+from gameComponents import winLose
 
 choices = ["rock", "paper", "scissors"]
 
@@ -8,24 +9,6 @@ player = False
 # these lives need to decrement when a player chooses via input 
 playerLives = 5
 computerLives = 5
-
-
-def winorlose(status):
-	print("You " + status + "! Would you like to play again?")
-	choice = input(" Y / N? ")
-
-	global playerLives
-	global computerLives
-	global player
-
-	if choice == "n":
-		print(" Better luck next time!")
-		exit()
-	# reset and restart
-	else:
-		playerLives = 5
-		computerLives = 5
-		player = False
 
 # create an infinite loop 
 while player is False:
@@ -67,9 +50,9 @@ while player is False:
 	print("computer life count: " + str(computerLives))
 
 	if playerLives == 0:
-		winorlose("lost")
+		winLose.winorlose("lost")
 
 	elif computerLives == 0:
-		winorlose("won")
+		winLose.winorlose("won")
 
 	player = False
