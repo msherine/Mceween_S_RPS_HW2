@@ -2,15 +2,29 @@
 
 # Rock Paper Scissors Game with Python
 
-TODO: Write a project description
+Pick your weapon and play against the computer - you'll only get a virtual sting if you lose!
 
-## Installation
+### Prerequisites
 
-TODO: Describe the installation process
+All you need is Python 3 to play.
 
-## Usage
 
-TODO: Write usage instructions
+### Usage
+Clone the project, <code>cd</code> to your directory/download, and run the game.py file in a Python 3 shell (Terminal on a mac / Linux, Windows command prompt).
+
+### Rules
+Same as the classic game:
+
+Paper covers Rock  Scissors cuts Paper  Rock smashes Scissors
+
+Choose your weapon wisely!
+
+Built with Python 3
+
+Enjoy!
+
+### License 
+MIT
 
 ## Contributing
 
@@ -19,18 +33,3 @@ TODO: Write usage instructions
 3. Commit your changes: `git commit -am 'Add some feature'`
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
-
-## History
-
-TODO: Write history
-
-## Credits
-
-TODO: Write credits
-// give accreditation to any resources / authors whose work you are using
-
-## License
-
-MIT
-
-TODO: Write license
